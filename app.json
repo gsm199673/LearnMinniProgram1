@@ -1,7 +1,33 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/category/category",
     "pages/about/about"
   ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabbar/tim.jpg",
+        "selectedIconPath": "assets/tabbar/tim.jpg"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/tabbar/timg.jpg",
+        "selectedIconPath": "assets/tabbar/timg.jpg"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap72.json"
 }
