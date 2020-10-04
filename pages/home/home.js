@@ -1,3 +1,23 @@
 Page({
-  
+  data:{
+    name:'Coderwhy',
+    age:25,
+    students:[
+      {id:110,name:'kobi',age:30},
+      {id:120,name:'kebi',age:28},
+      {id:119,name:'jms',age:36},
+      {id:112,name:'tps',age:25},
+    ],
+    counter:0
+  },
+  handleBtnClick(){
+    this.setData({
+      counter:this.data.counter+1
+    })
+  },
+  handleSubtraction(){
+    this.setData({
+      counter:this.data.counter-1
+    })
+  }
 })
