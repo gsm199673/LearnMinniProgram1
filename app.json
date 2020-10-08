@@ -2,13 +2,14 @@
   "pages": [
     "pages/home/home",
     "pages/category/category",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/about1/about1"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "小程序",
-    "backgroundColor": "#eeeeee",
+    "backgroundColor": "#ff5777",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
   },
@@ -23,6 +24,12 @@
       },
       {
         "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/tabbar/timg.jpg",
+        "selectedIconPath": "assets/tabbar/timg.jpg"
+      },
+      {
+        "pagePath": "pages/about1/about1",
         "text": "分类",
         "iconPath": "assets/tabbar/timg.jpg",
         "selectedIconPath": "assets/tabbar/timg.jpg"
