@@ -2,3 +2,8 @@
 <button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取授权</button>
 <open-data type="userNickName"></open-data>
 <open-data type="userAvatarUrl"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+<!-- 展示list里面的内容 -->
+<view wx:for="{{list}}">{{item.nickName}}</view>
