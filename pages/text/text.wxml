@@ -1,0 +1,12 @@
+<!--pages/text/text.wxml-->
+<text>pages/text/text.wxml\n</text>
+<text selectable>Hello World\n</text>
+<button>按钮</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<button size="mini" disabled>按钮</button>
+<button size="mini" plain>按钮</button>
+<button size="mini" loading="{{isLoading}}">按钮</button>
+<button hover-class="pressed">按钮</button>
+

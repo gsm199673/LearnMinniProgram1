@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/category/category",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/text/text"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -23,6 +24,12 @@
       },
       {
         "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/tabbar/timg.jpg",
+        "selectedIconPath": "assets/tabbar/timg.jpg"
+      },
+      {
+        "pagePath": "pages/text/text",
         "text": "分类",
         "iconPath": "assets/tabbar/timg.jpg",
         "selectedIconPath": "assets/tabbar/timg.jpg"
