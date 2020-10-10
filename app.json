@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/category/category",
-    "pages/about/about"
+    "pages/input/input",
+    "pages/about/about",
+    "pages/scroll-v/scroll-v"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -22,7 +23,13 @@
         "selectedIconPath": "assets/tabbar/tim.jpg"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/input/input",
+        "text": "分类",
+        "iconPath": "assets/tabbar/timg.jpg",
+        "selectedIconPath": "assets/tabbar/timg.jpg"
+      },
+      {
+        "pagePath": "pages/scroll-v/scroll-v",
         "text": "分类",
         "iconPath": "assets/tabbar/timg.jpg",
         "selectedIconPath": "assets/tabbar/timg.jpg"

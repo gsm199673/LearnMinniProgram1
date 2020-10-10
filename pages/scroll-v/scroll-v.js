@@ -1,4 +1,4 @@
-// pages/category/category.js
+// pages/scroll-v/scroll-v.js
 Page({
 
   /**
@@ -6,6 +6,9 @@ Page({
    */
   data: {
 
+  },
+  handleScroll(event){
+    console.log(`正在滚动`,event)
   },
 
   /**

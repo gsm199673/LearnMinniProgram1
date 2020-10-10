@@ -1,0 +1,13 @@
+<input/>
+<input value="哈哈" />
+<!-- 决定弹出来什么键盘类型 -->
+<input type="text"/>
+<!-- 密码类型的文本 -->
+<input password/>
+<input placeholder="请输入文字"/>
+<!-- input绑定事件 -->
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"/>
+
+
