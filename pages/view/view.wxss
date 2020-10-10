@@ -1,0 +1,21 @@
+/* pages/view/view.wxss */
+.box{
+  background-color: pink;
+}
+.box1{
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+.hover-view{
+  background-color: orange;
+  font-size: 30px;
+}
+.box2{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+.hover-box2{
+  background-color: pink;
+}

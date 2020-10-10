@@ -1,0 +1,12 @@
+<!--pages/image/image.wxml-->
+<image src="../../assets/test/untitled.png"/>
+<image src="/assets/test/untitled.png"/>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+<button bindtap="handleChooseAblm">选中图片</button>
+<image src="{{imagePath}}"/>
+<view>-------------</view>
+<image wx:for="{{1}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="handleImageLoad"
+lazy-load="{{true}}"
+/>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+show-menu-by-longpress="{{true}}"/>
