@@ -1,0 +1,7 @@
+<!--pages/wxml/wxml.wxml-->
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{age >=18 ? "成年人":"未成年人"}}</view>
+<view>{{nowTime}}</view>
+<button size="mini" bindtap="handleColor">切换颜色</button>
+<view class="box {{isActive ? 'action':''}}">哈哈哈</view>

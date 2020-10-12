@@ -54,11 +54,11 @@
       "current": -1,
       "list": []
     },
-    "game": {
+    "plugin": {
       "current": -1,
       "list": []
     },
-    "plugin": {
+    "game": {
       "current": -1,
       "list": []
     },
@@ -68,7 +68,21 @@
     },
     "miniprogram": {
       "current": -1,
-      "list": []
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/rpx/rpx",
+          "pathName": "pages/rpx/rpx",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/wxml/wxml",
+          "pathName": "pages/wxml/wxml",
+          "scene": null
+        }
+      ]
     }
   }
 }

@@ -1,20 +1,33 @@
-// pages/category/category.js
+// pages/wxml/wxml.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    message:`你好小程序`,
+    firstname:`kobi`,
+    lastname:`mary`,
+    age:20,
+    nowTime:new Date().toLocaleString(),
+    isActive:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setInterval(()=>{
+      this.setData({
+        nowTime:new Date().toLocaleString()
+      })
+    },1000)
   },
-
+  handleColor(){
+    this.setData({
+      isActive:!this.data.isActive
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

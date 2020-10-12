@@ -1,0 +1,3 @@
+/* pages/rpx/rpx.wxss */
+@import'../rpx/style/rpx1.wxss';
+@import'../rpx/style/weui-searchbar.wxss';

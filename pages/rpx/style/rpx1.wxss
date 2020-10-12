@@ -1,0 +1,12 @@
+
+.box1{
+  background-color: red;
+  width: 200rpx;
+  height: 200rpx;
+}
+.box2{
+  background-color: blueviolet;
+  width: 200rpx;
+  height: 200rpx;
+  font-size: 64rpx;
+}
