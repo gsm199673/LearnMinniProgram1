@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/category/category",
+    "pages/wx/wx",
     "pages/about/about"
   ],
   "window": {
@@ -22,7 +22,7 @@
         "selectedIconPath": "assets/tabbar/tim.jpg"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/wx/wx",
         "text": "分类",
         "iconPath": "assets/tabbar/timg.jpg",
         "selectedIconPath": "assets/tabbar/timg.jpg"

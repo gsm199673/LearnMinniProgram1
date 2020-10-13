@@ -1,0 +1,29 @@
+<!--pages/wx/wx.wxml-->
+<button size="mini" bindtap="handleSwitchShow" class="btn">切换显示</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
+<button size="mini" bindtap="handleIncrement" >分数递增</button>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+<view>=====================</view>
+<view hidden="{{false}}">哈哈哈</view>
+<view wx:if="{{true}}">哈哈哈</view>
+<!-- wx:for的用法 -->
+<view wx:for="{{['cba','nba','abc']}}">{{item}} {{index}}</view>
+<!-- <view wx:for="coderwhy">{{item}} {{index}}</view>
+<view wx:for="{{20}}">{{item}} {{index}}</view> -->
+<block wx:for="{{3}}" wx:if="{{isShow}}">
+  <view>呵呵呵</view>
+  <button>按钮</button>
+  <text>我是内容</text>
+</block>
+<!-- 给item和index起名字 -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}} {{i}}</view>
+<block wx:for="{{nums}}" wx:for-item="num">
+  <block wx:for="{{num}}">
+    <view>{{item}}</view>
+  </block>
+</block>
+<view>==================</view>
+<view wx:for="{{letters}}" wx:key>{{item}}</view>

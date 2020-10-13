@@ -1,0 +1,4 @@
+/* pages/wx/wx.wxss */
+.btn{
+  display: block;
+}

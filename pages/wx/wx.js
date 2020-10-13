@@ -1,13 +1,30 @@
-// pages/category/category.js
+// pages/wx/wx.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isShow:true,
+    score:45,
+    movies:["星际","火影","超人"],
+    nums:[
+      [10,32,56,588],
+      [30,6,146,46,57],
+      [65,54,58,53],
+    ],
+    letters:['a','b','c']
   },
-
+  handleIncrement(){
+    this.setData({
+      score:this.data.score+6
+    })
+  },
+  handleSwitchShow(){
+    this.setData({
+      isShow:!this.data.isShow
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
