@@ -1,1 +1,24 @@
-<view>首页</view>
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+<button size="mini" bind:tap="handleBtnClick">按钮</button>
+<button size="mini" catch:tap="handleBtnClick">按钮</button>
+<button size="mini" catchtap="handleBtnClick">按钮</button>
+<view class="box" bindtouchstart="handleTouchstart"
+      bindtouchmove="handTouchmove"
+      bindtouchend="handTouchend"
+      bindlongpress="handLongpress"
+      bindtap="handleTap"></view>
+<button size="mini" bindtap="handleEventClick">事件对象</button>
+<view class="container">
+<block wx:for="{{title}}" wx:key="{{index}}">
+      <view class="item" 
+      bindtap="handleItemClick"
+      data-index="{{index}}"
+      data-item="{{item}}">{{item}}</view>
+</block>
+</view>
+<view class="view1" capture-bind:tap="handleCaptrueView1" bindtap="handleBindView1">
+      <view class="view2" capture-catch:tap="handleCaptrueView2" bindtap="handleBindView2">
+            <view class="view3" capture-catch:tap="handleCaptrueView3" bindtap="handleBindView3"></view>
+      </view>
+</view>
+

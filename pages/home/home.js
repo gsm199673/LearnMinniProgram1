@@ -1,3 +1,51 @@
 Page({
-  
+  data:{
+    title:['衣服','裤子','鞋子']
+  },
+  handleBtnClick(){
+    console.log('==========')
+  },
+  handleTouchstart(){
+    console.log('bindtouchstart')
+  },
+  handTouchmove(){
+    console.log('handTouchmove')
+  },
+  handTouchend(){
+    console.log('handTouchend')
+  },
+  handleTap(){
+    console.log('handleTap')
+  },
+  handLongpress(){
+    console.log('handLongpress')
+  },
+  handleEventClick(event){
+    console.log('-------',event)
+  },
+  handleItemClick(event){
+    console.log(event)
+    const dataset=event.currentTarget.dataset
+    const index=dataset.index
+    const item=dataset.item
+    console.log(index,item)
+  },
+  handleCaptrueView1(){
+    console.log("handleCaptrueView1")
+  },
+  handleBindView1(){
+    console.log("handleBindView1")
+  },
+  handleCaptrueView2(){
+    console.log("handleCaptrueView2")
+  },
+  handleBindView2(){
+    console.log("handleBindView2")
+  },
+  handleCaptrueView3(){
+    console.log("handleCaptrueView3")
+  },
+  handleBindView3(){
+    console.log("handleBindView3")
+  }
 })
