@@ -1,3 +1,11 @@
 Page({
-  
+  data:{
+    counter:0
+  },
+  handleBtnClick(event){
+    console.log('--------',event)
+    this.setData({
+      counter:this.data.counter+1
+    })
+  }
 })

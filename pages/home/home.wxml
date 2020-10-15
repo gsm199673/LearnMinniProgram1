@@ -1,1 +1,8 @@
-<view>首页</view>
+<view class="title">首页</view>
+<my-cpn></my-cpn>
+<my-style></my-style>
+<my-prop title='哈哈哈' titleclass='red'></my-prop>
+<my-prop title='呵呵呵' titleclass='blue'></my-prop>
+<my-prop titleclass='green'></my-prop>
+<view>当前计数:{{counter}}</view>
+<my-event bind:increment="handleBtnClick"></my-event>
