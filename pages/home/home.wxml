@@ -1,3 +1,3 @@
 <text class="hello">Hello Word</text>
-<view>1.知识点1</view>
-<view>哈哈</view>
+
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:itemClick="handleTabClick"></w-tab-control>
