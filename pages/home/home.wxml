@@ -1,3 +1,19 @@
 <text class="hello">Hello Word</text>
-<view>1.知识点1</view>
-<view>哈哈</view>
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:handleClick='handleItemClick'></w-tab-control>
+<button size="mini" bindtap="handleSelect">修改组件内的数据</button>
+<my-select class="select-class"/>
+<view>-----------------------</view>
+<my-slot>
+<button size="mini">按钮</button>
+</my-slot>
+<my-slot>
+<slider value="60"></slider>
+</my-slot>
+<button size="mini" bindtap="handleChange">移除组件</button>
+<block wx:if="{{isShow}}">
+  <my-mslot>
+  <slider slot='slot1'></slider>
+  <button size="mini" slot='slot2'>我是插入的按钮</button>
+  <text slot='slot3'>哈哈哈</text>
+</my-mslot>
+</block>
