@@ -1,4 +1,4 @@
-// pages/about/about.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
   },
 
   /**
@@ -40,7 +40,12 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    const page=getCurrentPages()
+    console.log(page)
+    const home=page[page.length-2]
+    home.setData({
+      title:'呵呵呵'
+    })
   },
 
   /**
@@ -62,5 +67,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleBack(){
+    wx.navigateBack({
+      delta:1
+    })
   }
 })
