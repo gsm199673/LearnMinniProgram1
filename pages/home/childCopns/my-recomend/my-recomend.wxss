@@ -1,0 +1,20 @@
+/* pages/home/childCopns/my-recomend/my-recomend.wxss */
+.recommend{
+  display: flex;
+   margin-top: 40rpx;
+   border-bottom: 8rpx solid #eee;
+   padding-bottom: 40rpx;
+}
+.recomend-item{
+  flex: 1;
+  text-align: center;
+}
+.recomend-item image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.recomend-item view{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  color: #555;
+}

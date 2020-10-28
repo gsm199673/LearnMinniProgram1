@@ -1,3 +1,12 @@
-<text class="hello">Hello Word</text>
-<view>1.知识点1</view>
-<view>哈哈</view>
+<my-swiper list='{{banners}}'/>
+<my-recomend recommends="{{recommends}}" bind:imageLoad="handleImageLoad"></my-recomend>
+<my-popular/>
+<my-tab-control titles="{{titles}}"
+bind:itemClick='handleClick'
+class="{{isTabFixd?'fixd':''}}"
+id="tab-Control"/>
+<my-tab-control titles="{{titles}}" wx:if="{{isTabFixd}}"></my-tab-control>
+<!-- 展示商品的数据 -->
+<my-goods goods="{{goods[currentType].list}}"/>
+<!-- 回到顶部 -->
+<my-back-top wx:if="{{showBackTop}}"></my-back-top>
