@@ -1,3 +1,8 @@
 {
-  
+  "usingComponents": {
+    "my-search": "/components/my-search/my-search",
+    "my-swiper": "/components/my-swiper/my-swiper",
+    "prop":"/components/prop/prop",
+    "my-button":"/components/my-button/my-button"
+  }
 }

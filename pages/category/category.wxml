@@ -1,0 +1,31 @@
+<view class="cate_wrapper">
+  <!--pages/category/category.wxml-->
+  <!-- 搜索开始 -->
+  <my-search />
+  <!-- 搜索结束 -->
+  <view class="cate_page">
+    <!-- 左侧开始 -->
+    <scroll-view class="left" scroll-y="true">
+      <block wx:for="{{cateleftlist}}" wx:key="{{index}}">
+        <view class="cat_item {{currentIndex==index? 'active':''}}" data-index="{{index}}" bindtap="handleClick">
+          {{item.cat_name}}
+        </view>
+      </block>
+    </scroll-view>
+
+    <!-- 左侧结束 -->
+    <!-- 右侧开始 -->
+    <scroll-view class="right" scroll-y="true">
+      <block wx:for="{{rightcontent}}" wx:key="{{index1}}">
+        <view class="right_title">/{{item.cat_name}}/</view>
+        <view class="contentimg">
+          <navigator wx:for="{{item.children}}" wx:key="{{index2}}">
+            <image mode="widthFix" src="{{item.cat_icon}}"></image>
+            <view>{{item.cat_name}}</view>
+          </navigator>
+        </view>
+      </block>
+    </scroll-view>
+    <!-- 右侧结束 -->
+  </view>
+</view>

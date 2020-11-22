@@ -1,3 +1,50 @@
+import{
+  getMultiData,
+  getCateList,
+  getfloorData
+}from '../../service/home.js'
 Page({
-  
+  data:{
+    swiperList:[],
+    cateList:[],
+    counter:0,
+    floor_title:[]
+  },
+  onLoad:function(options){
+    this._getMultiData(),
+    this._getCateList(),
+    this._getfloorData()
+  },
+  _getMultiData(){
+    getMultiData().then(res=>{
+      //console.log(res)
+      const swiper=res.data.message;
+      this.setData({
+        swiperList:swiper
+      })
+    })
+  },
+  _getCateList(){
+    getCateList().then(res=>{
+      //console.log(res)
+      const cateList=res.data.message;
+      this.setData({
+        cateList:cateList
+      })
+    })
+  },
+  handleCounter(){
+    this.setData({
+      counter:this.data.counter+1
+    })
+  },
+  _getfloorData(){
+    getfloorData().then(res=>{
+      //console.log(res)
+      const floor=res.data.message;
+      this.setData({
+        floor_title:floor
+      })
+    })
+  }
 })

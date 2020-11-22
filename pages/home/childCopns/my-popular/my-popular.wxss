@@ -1,0 +1,4 @@
+/* pages/home/childCopns/my-popular/my-popular.wxss */
+.popular{
+  width: 100%;
+}

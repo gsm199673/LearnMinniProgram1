@@ -1,3 +1,26 @@
-<text class="hello">Hello Word</text>
-<view>1.知识点1</view>
-<view>哈哈</view>
+<!-- 搜索开始 -->
+<my-search />
+<!-- 搜索结束 -->
+<!-- 轮播图开始 -->
+<my-swiper list="{{swiperList}}" />
+<!-- 轮播图结束 -->
+<!-- 导航栏开始 -->
+<view class="catelist">
+  <block wx:for="{{cateList}}" wx:key="{{index}}">
+    <navigator>
+      <image src="{{item.image_src}}" class="image" mode="widthFix"></image>
+    </navigator>
+  </block>
+</view>
+<!-- 导航栏结束 -->
+<view class="floor">
+  <block wx:for="{{floor_title}}" wx:kex="{{index1}}">
+    <image src="{{item.floor_title.image_src}}" mode="widthFix" class="floorimage"></image>
+    <view class="floor_list">
+      <navigator wx:for="{{item.product_list}}" wx:key="index2" wx:for-index="index2">
+        <image src="{{item.image_src}}" mode="{{index2 ===0 ? 'widthFix': 'scaleToFill' }}"></image>
+      </navigator> 
+    </view>
+
+  </block>
+</view>`

@@ -1,0 +1,4 @@
+<!--components/my-search/my-search.wxml-->
+<view class="search">
+  <navigator open-type="navigate" url="/pages/home/childCopns/search/search">搜索</navigator>
+</view>
